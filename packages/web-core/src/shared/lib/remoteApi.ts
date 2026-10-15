@@ -27,6 +27,13 @@ let _remoteApiBase: string = BUILD_TIME_API_BASE;
  * No-op if base is null/undefined/empty (preserves build-time fallback).
  */
 export function setRemoteApiBase(base: string | null | undefined) {
+  // An explicitly configured build-time base always wins (self-hosting / dev):
+  // the backend's /api/info may point at the retired cloud service.
+  if (BUILD_TIME_API_BASE) {
+    _remoteApiBase = BUILD_TIME_API_BASE;
+    syncRelayApiBaseWithRemote(_remoteApiBase);
+    return;
+  }
   _remoteApiBase = base || BUILD_TIME_API_BASE;
   if (_remoteApiBase) {
     syncRelayApiBaseWithRemote(_remoteApiBase);

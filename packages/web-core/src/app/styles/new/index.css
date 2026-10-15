@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=IBM+Plex+Mono:ital,wght@0,100..700;1,100..700&family=Noto+Emoji:wght@300..700&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300..700;1,300..700&family=Fira+Code:wght@400..700&family=Noto+Emoji:wght@300..700&family=Roboto:wght@500&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -14,32 +14,32 @@ html {
   /* Light defaults */
   :root {
     color-scheme: light;
-    --_background: 0 0% 95%;
-    --_foreground: 0 0% 5%;
-    --_primary: 0 0% 5%;
+    --_background: 215 45% 96%;
+    --_foreground: 222 60% 10%;
+    --_primary: 142 64% 36%;
     --_primary-foreground: 0 0% 100%;
-    --_secondary: 0 0% 95%;
-    --_secondary-foreground: 0 0% 16%;
-    --_muted: 0 0% 89%;
-    --_muted-foreground: 0 0% 56%;
-    --_accent: 0 0% 92%;
-    --_accent-foreground: 0 0% 5%;
-    --_destructive: 0 59% 57%;
+    --_secondary: 0 0% 100%;
+    --_secondary-foreground: 222 40% 22%;
+    --_muted: 214 40% 92%;
+    --_muted-foreground: 215 25% 40%;
+    --_accent: 214 38% 90%;
+    --_accent-foreground: 222 60% 12%;
+    --_destructive: 350 84% 52%;
     --_destructive-foreground: 0 0% 100%;
-    --_border: 0 0% 85%;
-    --_input: 0 0% 96%;
-    --_ring: 0 0% 5%;
-    --_radius: 0.125rem;
+    --_border: 214 32% 84%;
+    --_input: 214 30% 88%;
+    --_ring: 142 64% 36%;
+    --_radius: 0.5rem;
 
     /* Status (light) */
-    --_success: 117 38% 50%;
-    --_success-foreground: 117 38% 20%;
-    --_warning: 32 95% 44%;
-    --_warning-foreground: 32 95% 14%;
-    --_info: 217 91% 60%;
-    --_info-foreground: 0 0% 5%;
-    --_neutral: 0 0% 92%;
-    --_neutral-foreground: 0 0% 5%;
+    --_success: 142 60% 34%;
+    --_success-foreground: 142 60% 16%;
+    --_warning: 28 85% 40%;
+    --_warning-foreground: 28 85% 14%;
+    --_info: 200 80% 40%;
+    --_info-foreground: 200 80% 12%;
+    --_neutral: 214 30% 88%;
+    --_neutral-foreground: 222 40% 24%;
 
     /* Console (light) */
     --_console-background: 0 0% 100%;
@@ -59,14 +59,14 @@ html {
     --_syntax-deleted: #b31d28;
 
     /* Text (light) */
-    --text-high: 0 0% 5%;
-    --text-normal: 0 0% 20%;
-    --text-low: 0 0% 39%;
+    --text-high: 222 60% 10%;
+    --text-normal: 215 35% 26%;
+    --text-low: 215 22% 42%;
 
     /* Background (light) - with VS Code overrides */
-    --_bg-primary-default: 0 0% 100%;
-    --_bg-secondary-default: 0 0% 95%;
-    --_bg-panel-default: 0 0% 89%;
+    --_bg-primary-default: 215 45% 97%;
+    --_bg-secondary-default: 0 0% 100%;
+    --_bg-panel-default: 214 36% 91%;
     --bg-primary: var(--vscode-editor-background, var(--_bg-primary-default));
     --bg-secondary: var(
       --vscode-editorWidget-background,
@@ -75,12 +75,13 @@ html {
     --bg-panel: var(--vscode-input-background, var(--_bg-panel-default));
 
     /* Accent (light) */
-    --brand: 25 82% 54%;
-    --brand-hover: 25 75% 62%;
-    --brand-secondary: 25 82% 37%;
-    --error: 0 59% 57%;
-    --success: 117 38% 50%;
-    --merged: 271 81% 46%;
+    --brand: 142 64% 36%;
+    --brand-hover: 142 64% 42%;
+    --brand-secondary: 142 50% 28%;
+    --error: 350 84% 52%;
+    --success: 142 60% 36%;
+    --merged: 262 83% 52%;
+    --info: 200 80% 40%;
 
     /* Text on accent */
     --text-on-brand: 0 0% 100%;
@@ -91,41 +92,41 @@ html {
     color-scheme: dark;
 
     /* Internal variables (dark) - needed for public tokens */
-    --_background: 0 0% 13%;
-    --_foreground: 0 0% 96%;
-    --_primary: 240 4.8% 95.9%;
-    --_primary-foreground: 240 5.9% 10%;
-    --_secondary: 0 0% 12%;
-    --_secondary-foreground: 0 0% 77%;
-    --_muted: 0 0% 16%;
-    --_muted-foreground: 0 0% 64%;
-    --_accent: 0 0% 20%;
-    --_accent-foreground: 0 0% 96%;
-    --_destructive: 0 59% 57%;
-    --_destructive-foreground: 0 0% 96%;
-    --_border: 0 0% 20%;
-    --_input: 0 0% 20%;
-    --_ring: 0 0% 77%;
+    --_background: 222 76% 5%;
+    --_foreground: 210 40% 98%;
+    --_primary: 142 71% 45%;
+    --_primary-foreground: 140 80% 8%;
+    --_secondary: 217 33% 12%;
+    --_secondary-foreground: 215 22% 77%;
+    --_muted: 217 32% 15%;
+    --_muted-foreground: 215 18% 64%;
+    --_accent: 217 32% 19%;
+    --_accent-foreground: 210 40% 98%;
+    --_destructive: 350 89% 60%;
+    --_destructive-foreground: 210 40% 98%;
+    --_border: 217 28% 21%;
+    --_input: 217 28% 19%;
+    --_ring: 142 71% 45%;
 
     /* Status (dark) */
-    --_success: 117 38% 50%;
-    --_success-foreground: 117 38% 90%;
-    --_warning: 32.2 95% 44.1%;
-    --_warning-foreground: 32.2 95% 90%;
-    --_info: 217.2 91.2% 59.8%;
-    --_info-foreground: 217.2 91.2% 90%;
-    --_neutral: 0 0% 20%;
-    --_neutral-foreground: 0 0% 90%;
+    --_success: 142 71% 48%;
+    --_success-foreground: 142 71% 90%;
+    --_warning: 38 92% 55%;
+    --_warning-foreground: 38 92% 90%;
+    --_info: 199 89% 55%;
+    --_info-foreground: 199 89% 90%;
+    --_neutral: 217 28% 21%;
+    --_neutral-foreground: 215 20% 90%;
 
     /* Text (dark) */
-    --text-high: 0 0% 96%;
-    --text-normal: 0 0% 77%;
-    --text-low: 0 0% 56%;
+    --text-high: 210 40% 98%;
+    --text-normal: 215 22% 77%;
+    --text-low: 215 18% 58%;
 
     /* Background (dark) - with VS Code overrides */
-    --_bg-primary-default: 0 0% 13%;
-    --_bg-secondary-default: 0 0% 11%;
-    --_bg-panel-default: 0 0% 16%;
+    --_bg-primary-default: 222 76% 6%;
+    --_bg-secondary-default: 222 60% 9%;
+    --_bg-panel-default: 217 33% 13%;
     --bg-primary: var(--vscode-editor-background, var(--_bg-primary-default));
     --bg-secondary: var(
       --vscode-editorWidget-background,
@@ -134,20 +135,21 @@ html {
     --bg-panel: var(--vscode-input-background, var(--_bg-panel-default));
 
     /* Accent (dark) */
-    --brand: 25 82% 54%;
-    --brand-hover: 25 75% 62%;
-    --brand-secondary: 25 82% 37%;
-    --error: 0 59% 57%;
-    --success: 117 38% 50%;
-    --merged: 271 81% 66%;
+    --brand: 142 71% 45%;
+    --brand-hover: 142 71% 52%;
+    --brand-secondary: 142 60% 32%;
+    --error: 350 89% 60%;
+    --success: 142 71% 48%;
+    --merged: 262 83% 66%;
+    --info: 199 89% 55%;
 
     /* Text on accent */
-    --text-on-brand: 0 0% 100%;
+    --text-on-brand: 140 80% 7%;
     /* Console (dark) */
-    --_console-background: 0 0% 0%;
+    --_console-background: 222 76% 3%;
     --_console-foreground: 210 40% 98%;
-    --_console-success: 138.5 76.5% 47.7%;
-    --_console-error: 0 84.2% 60.2%;
+    --_console-success: 142 71% 50%;
+    --_console-error: 350 89% 60%;
 
     /* Syntax highlighting (dark) */
     --_syntax-keyword: #ff7b72;

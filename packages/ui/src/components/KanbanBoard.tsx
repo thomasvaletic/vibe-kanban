@@ -109,11 +109,12 @@ export const KanbanCard = ({
         return (
           <Card
             className={cn(
-              'p-base outline-none flex-col border -mt-[1px] -mx-[1px] bg-primary',
-              snapshot.isDragging && 'cursor-grabbing shadow-lg',
+              'p-base outline-none flex-col border rounded-lg bg-secondary cursor-pointer',
+              'transition duration-200 ease-out hover:border-brand hover:shadow-lg hover:-translate-y-0.5',
+              snapshot.isDragging && 'cursor-grabbing shadow-xl border-brand',
               isSelected
-                ? 'ring-2 ring-accent ring-inset bg-accent/5'
-                : isOpen && 'ring-2 ring-secondary-foreground ring-inset',
+                ? 'ring-2 ring-brand ring-inset bg-accent/5'
+                : isOpen && 'ring-2 ring-brand/60 ring-inset',
               className
             )}
             ref={setRefs}
@@ -221,13 +222,16 @@ export const KanbanHeader = (props: KanbanHeaderProps) => {
         props.className
       )}
       style={{
-        backgroundImage: `linear-gradient(hsl(var(${props.color}) / 0.03), hsl(var(${props.color}) / 0.03))`,
+        backgroundImage: `linear-gradient(hsl(var(${props.color}) / 0.08), hsl(var(${props.color}) / 0.04))`,
       }}
     >
       <span className="flex-1 flex items-center gap-base">
         <div
           className="h-2 w-2 rounded-full"
-          style={{ backgroundColor: `hsl(var(${props.color}))` }}
+          style={{
+            backgroundColor: `hsl(var(${props.color}))`,
+            boxShadow: `0 0 8px hsl(var(${props.color}) / 0.7)`,
+          }}
         />
 
         <p className="m-0 text-sm">{props.name}</p>
@@ -270,7 +274,7 @@ export const KanbanProvider = ({
     <DragDropContext onDragEnd={onDragEnd}>
       <div
         className={cn(
-          'inline-grid grid-flow-col auto-cols-[minmax(200px,400px)] divide-x border-x items-stretch min-h-full',
+          'inline-grid grid-flow-col auto-cols-[minmax(220px,400px)] items-stretch min-h-full gap-base px-base py-base',
           className
         )}
       >

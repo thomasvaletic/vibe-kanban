@@ -10,7 +10,7 @@ const sizes = {
 }
 
 const lineHeightMultiplier = 1.5;
-const radiusMultiplier = 0.25;
+const radiusMultiplier = 0.55;
 const iconMultiplier = 1.25;
 const chatMaxWidth = '48rem';
 
@@ -137,8 +137,8 @@ module.exports = {
         half: getSize('base', 0.5),
       },
       fontFamily: {
-        'ibm-plex-sans': ['"IBM Plex Sans"', '"Noto Emoji"', 'sans-serif'],
-        'ibm-plex-mono': ['"IBM Plex Mono"', 'monospace'],
+        'ibm-plex-sans': ['"Fira Sans"', '"Noto Emoji"', 'sans-serif'],
+        'ibm-plex-mono': ['"Fira Code"', 'monospace'],
       },
       keyframes: {
         "accordion-down": {
